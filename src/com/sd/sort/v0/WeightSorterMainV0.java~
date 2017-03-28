@@ -1,8 +1,0 @@
-package com.sd.sort.v0;
-
-
-public class WeightSorterMainV0 {
-    public static void main(String[] args){
-   Nimber=new Number();
-   Cha=new Cha();
-}
