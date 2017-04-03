@@ -1,0 +1,5 @@
+package headfirst.observer.weather;
+
+import java.util.*;
+
+public class WeatherData implements Subject {}
