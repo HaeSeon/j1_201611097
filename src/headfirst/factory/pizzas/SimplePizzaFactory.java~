@@ -1,0 +1,9 @@
+package headfirst.factory.pizzas;
+
+public class SimplePizzaFactory{
+  Public Pizza createPizza(String type){
+    if(type=="cheese"){
+    return new CheesePizza();
+    }
+  }
+}
