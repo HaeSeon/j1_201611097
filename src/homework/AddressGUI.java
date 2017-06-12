@@ -8,8 +8,6 @@ import javax.swing.*;
 
 
 public class AddressGUI extends JFrame implements ActionListener{
-
-AddressData addressData = new AddressData();
   Address address;
   JTextField a0;
   JTextField a1;
