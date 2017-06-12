@@ -1,5 +1,6 @@
 package homework;
 public class Address implements Observer {
+ private int id;
  private String name;
  private String phone;
  private String kkt;
@@ -11,7 +12,8 @@ public class Address implements Observer {
   addressData.registerObserver(this);
  }
  
- public void update(String name,String phone,String kkt,String sns) {
+ public void update(int id,String name,String phone,String kkt,String sns) {
+  this.id=id;
   this.name = name;
   this.phone = phone;
   this.kkt=kkt;

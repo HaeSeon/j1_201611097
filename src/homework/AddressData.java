@@ -2,6 +2,7 @@ package homework;
 import java.util.*;
 public class AddressData implements Subject{
   public ArrayList<Observer> observers = new ArrayList<Observer>();
+  private int id;
   private String name;
   private String phone;
   private String kkt;
@@ -21,7 +22,7 @@ public class AddressData implements Subject{
   public void notifyObservers() {
     for (int i = 0; i < observers.size(); i++) {
       Observer observer = (Observer)observers.get(i);
-      observer.update(name,phone,kkt,sns);
+      observer.update(id,name,phone,kkt,sns);
     }
   }
   
@@ -29,12 +30,17 @@ public class AddressData implements Subject{
     notifyObservers();
   }
   
-  public void setMeasurements(String name,String phone,String kkt,String sns) {
+  public void setMeasurements(int id,String name,String phone,String kkt,String sns) {
+    this.id=id;
     this.name = name;
     this.phone = phone;
     this.kkt = kkt;
     this.sns = sns;
     measurementsChanged();
+  }
+  
+  public int getId() {
+    return id;
   }
   
   public String getName() {
